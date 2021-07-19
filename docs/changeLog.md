@@ -7,6 +7,14 @@ order: 1
 
 遵循 [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
+### 🚀 2.11.0
+
+`2021-06-24`
+
+- 新增组件 [SelectList](/high-coupling/select-list)
+- Magic
+  - 新增属性 `wrapperClassName`，Spin容器类名称方便自定义样式
+
 ### 🚀 2.10.0
 
 `2021-06-23`

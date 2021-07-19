@@ -10,6 +10,7 @@ const Item = (props) => {
   const { boxShadow = true } = useContext(MagicContext);
   const [collapsed, setCollapsed] = useState(true);
   const {
+    wrapperClassName,
     title,
     footer,
     extra,
@@ -28,7 +29,7 @@ const Item = (props) => {
 
   return (
     <Spin
-      wrapperClassName={classNames('td-magic-item-wrap', {
+      wrapperClassName={classNames(wrapperClassName, 'td-magic-item-wrap', {
         'td-magic-item-box-shadow': props.boxShadow ?? boxShadow,
       })}
       spinning={loading}

@@ -180,6 +180,7 @@ export default () => {
 
 |参数|说明|类型|默认值|
 |:--|:--|:--|:--|
+|wrapperClassName|Spin容器类名称|String|-|
 |footer|页脚内容，会固定在底部|ReactNode|-|
 |footerVisible|页脚内容是否展示|Boolean|true|
 |loading|加载效果|Boolean|false|
@@ -192,6 +193,7 @@ export default () => {
 
 |参数|说明|类型|默认值|
 |:--|:--|:--|:--|
+|wrapperClassName|Spin容器类名称|String|-|
 |title|标题|ReactNode|-|
 |titleExtra|额外的标题内容|ReactNode|-|
 |footer|页脚内容|ReactNode|-|

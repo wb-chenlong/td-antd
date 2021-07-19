@@ -9,6 +9,7 @@ export const MagicContext = React.createContext({});
 // 最外层组件
 const Magic = (props) => {
   const {
+    wrapperClassName,
     footer,
     footerVisible = true,
     footerStyle,
@@ -39,7 +40,7 @@ const Magic = (props) => {
       }}
     >
       <Spin
-        wrapperClassName={classNames('td-magic-wrap', {
+        wrapperClassName={classNames(wrapperClassName, 'td-magic-wrap', {
           'td-magic-wrap-padding-bottom': footerVisible && footer,
         })}
         style={{ paddingBottom: footer ? 64 : 0}}
